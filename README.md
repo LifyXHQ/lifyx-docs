@@ -6,15 +6,24 @@ Official documentation and developer resources for the LifyX ecosystem.
 
 LifyX is a decentralized trading platform and Web3 ecosystem designed to provide fast, scalable, self-custodial and privacy-focused trading experiences across spot and perpetual markets.
 
+LifyX integrates specialized infrastructure providers across its trading ecosystem:
+
+- KalqiX infrastructure for Spot markets
+- Orderly infrastructure for Perpetual markets
+
 This repository contains public documentation and developer resources related to the LifyX ecosystem.
 
 ## LifyX Spot
 
-LifyX Spot provides high-performance decentralized spot trading infrastructure designed for speed, scale and privacy.
+LifyX Spot provides high-performance decentralized spot trading designed for speed, scale and privacy.
+
+### Infrastructure
+
+LifyX Spot integrates KalqiX infrastructure for spot market execution, market data and trading functionality.
 
 ### Core Features
 
-- Sub-10ms matching engine
+- Sub-10ms matching
 - 250K+ transactions per second
 - ZK-proven trades
 - Private execution
@@ -31,8 +40,9 @@ Developer documentation will include:
 - Market data
 - Order book data
 - Ticker data
+- Recent trades
+- Trade history
 - Order management
-- Trading history
 - Authentication
 - Wallet connectivity
 - Deposits and withdrawals
@@ -43,6 +53,10 @@ Developer documentation will include:
 ## LifyX Perpetuals
 
 LifyX Perpetuals provides decentralized perpetual trading across crypto and global markets through a self-custodial trading experience.
+
+### Infrastructure
+
+LifyX Perpetuals integrates Orderly infrastructure for perpetual markets, liquidity access, market data and trading functionality.
 
 ### Core Features
 
@@ -69,6 +83,16 @@ Developer documentation will include:
 - Wallet integration
 - Trading utilities
 
+## Infrastructure Providers
+
+### KalqiX
+
+KalqiX infrastructure is integrated within LifyX Spot to support high-performance spot trading and related market infrastructure.
+
+### Orderly
+
+Orderly infrastructure is integrated within LifyX Perpetuals to support decentralized perpetual markets, liquidity and trading functionality.
+
 ## Developer Resources
 
 Additional resources and examples will be published as the LifyX developer ecosystem expands.
@@ -76,25 +100,14 @@ Additional resources and examples will be published as the LifyX developer ecosy
 Planned resources include:
 
 - Spot API examples
-- Perpetual market examples
+- Perpetual API examples
 - Market data examples
+- Order book examples
 - Wallet connection examples
 - Web3 utilities
 - Network configuration
 - Token metadata
 - Trading integration examples
-
-## Security
-
-Never share:
-
-- Private keys
-- Seed phrases
-- API secrets
-- Wallet credentials
-- Environment secrets
-
-LifyX will never ask users to provide wallet seed phrases through GitHub issues, pull requests or support messages.
 
 ## API Examples
 
@@ -107,6 +120,18 @@ https://github.com/LifyXHQ/lifyx-api-examples
 Platform updates and release notes:
 
 https://github.com/LifyXHQ/lifyx-changelog
+
+## Security
+
+Never share:
+
+- Private keys
+- Seed phrases
+- API secrets
+- Wallet credentials
+- Environment secrets
+
+LifyX will never ask users to provide wallet seed phrases through GitHub issues, pull requests or support messages.
 
 ## Official Links
 
