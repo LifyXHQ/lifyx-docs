@@ -1,180 +1,149 @@
-# LifyX Perpetual API Reference
+# LifyX Documentation
 
-Developer reference for public LifyX Perpetual market data and trading infrastructure.
+Official documentation and developer resources for the LifyX ecosystem.
 
 ## Overview
 
-LifyX Perpetuals integrates Orderly infrastructure to provide decentralized perpetual trading, liquidity access, public market data and execution functionality.
+LifyX is a decentralized trading platform and Web3 ecosystem designed to provide fast, scalable, self-custodial and privacy-focused trading experiences across spot and perpetual markets.
 
-This reference focuses on public perpetual market data workflows available through the integrated infrastructure.
+LifyX integrates specialized infrastructure providers across its trading ecosystem:
 
-## Infrastructure Provider
+- KalqiX infrastructure for Spot markets
+- Orderly infrastructure for Perpetual markets
 
-Orderly
+This repository contains public documentation, API references and developer resources for the LifyX ecosystem.
 
-## Production API
+## Documentation Structure
 
-Base URL:
+### Spot Trading
 
-`https://api.orderly.org`
+LifyX Spot provides high-performance decentralized spot trading designed for speed, scale and privacy.
 
-## Example Market
+Infrastructure Provider:
 
-Examples commonly use:
+`KalqiX`
 
-`PERP_BTC_USDC`
+Spot API Reference:
 
-Developers can replace this symbol with another supported LifyX Perpetual market.
+`spot/api-reference/README.md`
 
-## Public Market Data
+Direct link:
 
-### Available Markets
+https://github.com/LifyXHQ/lifyx-docs/tree/main/spot/api-reference
 
-`GET /v1/public/info`
+Core capabilities include:
 
-Returns available perpetual markets and trading rules.
+- Sub-10ms matching
+- 250K+ transactions per second
+- ZK-proven trades
+- Private execution
+- Professional order book trading
+- High-performance market data
+- API-ready trading infrastructure
 
-Example:
+Spot documentation covers:
 
-`https://api.orderly.org/v1/public/info`
+- Server time
+- Available markets
+- Trading pairs
+- Market prices
+- Order book data
+- Recent trades
+- Market data workflows
+- Public API endpoints
 
-### Order Book
+## Perpetual Trading
 
-`GET /v1/public/orderbook/{symbol}`
+LifyX Perpetuals provides decentralized perpetual trading across crypto and global markets through a self-custodial trading experience.
 
-Returns public bid and ask data for a selected perpetual market.
+Infrastructure Provider:
 
-Example:
+`Orderly`
 
-`https://api.orderly.org/v1/public/orderbook/PERP_BTC_USDC`
+Perpetual API Reference:
 
-### Public Liquidation Data
+`perpetuals/api-reference/README.md`
 
-`GET /v1/public/liquidated_positions`
+Direct link:
 
-Returns public liquidation information.
+https://github.com/LifyXHQ/lifyx-docs/tree/main/perpetuals/api-reference
 
-Example:
-
-`https://api.orderly.org/v1/public/liquidated_positions`
-
-## Official SDK Workflows
-
-Some examples in the LifyX developer repository use the official Orderly SDK workflow.
-
-### Funding Rate
-
-`getPredictedFundingRateForOne(symbol)`
-
-Retrieves the predicted funding rate for a selected perpetual market.
-
-### Funding History
-
-`getFundingRateHistoryForOneMarket(payload)`
-
-Retrieves historical funding rate information.
-
-### Futures Markets
-
-`getFuturesInfoForAllMarkets()`
-
-Retrieves information for available perpetual markets.
-
-### Single Futures Market
-
-`getFuturesForOneMarket(symbol)`
-
-Retrieves market information for a selected perpetual market.
-
-### Recent Trades
-
-`getMarketTrades(symbol, limit)`
-
-Retrieves recent public trades for a selected perpetual market.
-
-### Kline Data
-
-`getKline(symbol, type, limit)`
-
-Retrieves candlestick market data for a selected perpetual market.
-
-## Market Data Resources
-
-LifyX Perpetual examples cover:
+Perpetual documentation covers:
 
 - Available markets
 - Trading symbols
 - Order book data
 - Funding rates
 - Funding history
+- Futures market information
 - Mark prices
 - Index prices
 - Recent trades
 - Kline data
 - Market statistics
-- Futures market information
+- Public market data workflows
 
-## Code Examples
+## Infrastructure Providers
 
-Public JavaScript examples are available in:
+### KalqiX
 
-`lifyx-api-examples/examples/perpetuals/market-data/`
+KalqiX infrastructure is integrated within LifyX Spot to support high-performance spot trading, market data and execution functionality.
 
-Repository:
+### Orderly
+
+Orderly infrastructure is integrated within LifyX Perpetuals to support decentralized perpetual markets, liquidity access, market data and trading functionality.
+
+## API Examples
+
+Public JavaScript examples for Spot and Perpetual markets are available in:
 
 https://github.com/LifyXHQ/lifyx-api-examples
 
-Available examples include:
+### Spot Examples
 
-- `get-public-data.js`
-- `get-markets.js`
-- `get-order-book.js`
-- `get-funding-rate.js`
-- `get-funding-history.js`
-- `get-futures-info.js`
-- `get-futures-market.js`
-- `get-mark-price.js`
-- `get-index-price.js`
-- `get-recent-trades.js`
-- `get-kline.js`
-- `get-market-stats.js`
+https://github.com/LifyXHQ/lifyx-api-examples/tree/main/examples/spot/market-data
+
+### Perpetual Examples
+
+https://github.com/LifyXHQ/lifyx-api-examples/tree/main/examples/perpetuals/market-data
+
+## Changelog
+
+Platform updates and release notes:
+
+https://github.com/LifyXHQ/lifyx-changelog
 
 ## Security
-
-Public market data endpoints should not require:
-
-- Private keys
-- Seed phrases
-- Wallet credentials
 
 Never expose:
 
 - Private keys
+- Seed phrases
 - API secrets
 - Wallet credentials
 - Environment secrets
 
-Use secure secret management for authenticated integrations.
+Public market data examples should not require sensitive wallet credentials.
 
-## Documentation
-
-LifyX Developer Documentation:
-
-https://github.com/LifyXHQ/lifyx-docs
-
-Orderly:
-
-https://github.com/OrderlyNetwork
+Always use secure secret management for authenticated integrations.
 
 ## Official Links
 
 Website: https://lifyx.exchange
 
-Trading Platform: https://dex.lifyx.exchange
+Trading Platform: https://app.lifyx.exchange
 
 GitHub: https://github.com/LifyXHQ
 
-Support: support@lifyx.exchange
+X: https://x.com/LifyX_Exchange
+
+LinkedIn: https://www.linkedin.com/company/lifyxexchange/
+
+Telegram: https://t.me/lifyx_exchange
+
+## Support
+
+support@lifyx.exchange
 
 ---
 
